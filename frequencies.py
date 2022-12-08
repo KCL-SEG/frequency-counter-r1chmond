@@ -3,9 +3,10 @@
 
 def frequencies(items):
     frequencies = {}
-    str(items)
-    for element in items:
+    temp = list(map(str, items))
+    for element in temp:
         frequencies[element] = frequencies.get(element, 0) + 1
     return frequencies
 
-
+input = ['0', 4,4,'4','d','d','e',0,'a','d','4']
+print(frequencies(input))
